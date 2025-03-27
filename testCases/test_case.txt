@@ -1,0 +1,21 @@
+Test Case 1: Sign Up
+Steps:
+1. Open the website.
+2. Click on the 'Sign Up' button.
+3. Enter a username and password.
+4. Click the 'Sign Up' button in the modal.
+5. Confirm the success message.
+
+Test Case 2: Log In
+Steps:
+1. Open the website.
+2. Click on the 'Log In' button.
+3. Enter the username and password.
+4. Click the 'Log In' button in the modal.
+5. Confirm successful login by checking the welcome message.
+
+Test Case 3: Log Out
+Steps:
+1. Log in to the website.
+2. Click on the 'Log Out' button.
+3. Confirm successful logout by checking that the login button reappears.
