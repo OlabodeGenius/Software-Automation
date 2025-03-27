@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-27T10:55:45.430301" rpa="false" schemaversion="5">
+<suite id="s1" name="SoftwareAutomation" source="C:\Users\Church\PycharmProjects\SoftwareAutomation">
+<suite id="s1-s1" name="testCases" source="C:\Users\Church\PycharmProjects\SoftwareAutomation\testCases">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\Church\PycharmProjects\SoftwareAutomation\testCases\test.robot">
+<test id="s1-s1-s1-t1" name="Log In" line="36">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-27T10:55:51.181390" level="INFO">Opening browser 'Chrome' to base url 'https://www.demoblaze.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-27T10:55:51.176396" elapsed="16.893610"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-27T10:56:08.088995" elapsed="0.406767"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='login2']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-27T10:56:08.551733" elapsed="0.741572"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-27T10:56:09.298302" level="INFO">Clicking element 'xpath=//a[@id='login2']'.</msg>
+<arg>xpath=//a[@id='login2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T10:56:09.296304" elapsed="1.136347"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='loginusername']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-27T10:56:10.443645" elapsed="0.698598"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T10:56:11.153235" level="INFO">Typing text 'testuser@100' into text field 'xpath=//input[@id='loginusername']'.</msg>
+<arg>xpath=//input[@id='loginusername']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T10:56:11.150245" elapsed="1.212254"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T10:56:12.369495" level="INFO">Typing text 'testpass' into text field 'xpath=//input[@id='loginpassword']'.</msg>
+<arg>xpath=//input[@id='loginpassword']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T10:56:12.367496" elapsed="0.788725"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-27T10:56:13.171215" level="INFO">Clicking button 'xpath=//button[text()='Log in']'.</msg>
+<arg>xpath=//button[text()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T10:56:13.169216" elapsed="1.192838"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Welcome ${USERNAME}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-27T10:56:14.538954" elapsed="3.745242"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-27T10:56:18.296549" elapsed="4.928038"/>
+</kw>
+<status status="PASS" start="2025-03-27T10:55:51.162770" elapsed="32.064810"/>
+</test>
+<status status="PASS" start="2025-03-27T10:55:45.934372" elapsed="37.299392"/>
+</suite>
+<status status="PASS" start="2025-03-27T10:55:45.915378" elapsed="37.331942"/>
+</suite>
+<status status="PASS" start="2025-03-27T10:55:45.451117" elapsed="37.807199"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="SoftwareAutomation" id="s1" pass="1" fail="0" skip="0">SoftwareAutomation</stat>
+<stat name="testCases" id="s1-s1" pass="1" fail="0" skip="0">SoftwareAutomation.testCases</stat>
+<stat name="Test" id="s1-s1-s1" pass="1" fail="0" skip="0">SoftwareAutomation.testCases.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

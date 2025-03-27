@@ -1,0 +1,21 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+
+# Ignore output files
+output/
+log.html
+report.html
+output.xml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
